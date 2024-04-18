@@ -1,0 +1,64 @@
+@use './token';
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  &:before,
+  &:after {
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+  }
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+body {
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+a {
+  text-decoration-skip-ink: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+input:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px token.$bg-color inset;
+}

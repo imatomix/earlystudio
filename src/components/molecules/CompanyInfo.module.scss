@@ -1,0 +1,21 @@
+@use "@/assets/styles/partials/token";
+.info {
+  display: grid;
+  grid-template-columns: minmax(130px, 20%) 1fr;
+  width: 100%;
+  border-bottom: token.$border;
+  thead,
+  tbody,
+  tfoot,
+  tr {
+    display: contents;
+  }
+  th,
+  td {
+    display: block;
+    padding: token.$screen-padding-mobile;
+    text-align: start;
+    line-height: 2em;
+    border-top: token.$border;
+  }
+}

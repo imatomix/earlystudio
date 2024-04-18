@@ -1,0 +1,9 @@
+@use "@/assets/styles/partials/token";
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: culc (100vh - #{token.$header-height});
+}

@@ -1,0 +1,7 @@
+@use "@/assets/styles/partials/token";
+.works {
+  display: block;
+  width: 100%;
+  min-height: 100vh;
+  background-color: token.$text-color;
+}

@@ -1,0 +1,97 @@
+@use 'sass:math';
+@use './token';
+@use './typo';
+
+html {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  -webkit-overflow-scrolling: touch;
+  font-size: 100%;
+}
+body {
+  position: relative;
+  min-width: token.$min-width;
+  width: 100%;
+  min-height: 100%;
+  font-family: typo.$font;
+  font-size: 1rem;
+  font-weight: token.$font-regular;
+  font-feature-settings: 'palt';
+  letter-spacing: 0.05em;
+  line-height: token.$line-height;
+  color: token.$text-color;
+  background-color: token.$bg-color;
+}
+a {
+  text-decoration: none;
+  color: token.$link-text-color;
+  cursor: pointer;
+}
+p {
+  margin: 0;
+  padding: 0 0 token.$line-height;
+}
+h1 {
+  margin: 0;
+  padding: 0 0 0.5em;
+  font-size: 2em;
+  box-sizing: border-box;
+  line-height: token.$line-height;
+}
+h2 {
+  margin: 0;
+  padding: 0 0 0.5em;
+  font-size: 1.5em;
+  line-height: token.$line-height;
+}
+h3 {
+  margin: 0;
+  font-size: 1.35em;
+  font-weight: 600;
+  line-height: token.$line-height;
+}
+h4 {
+  margin: 0;
+  padding: 0.5em 0;
+  font-size: 1.1em;
+  font-weight: 500;
+  line-height: token.$line-height;
+}
+h5 {
+  margin: 0;
+  padding: 0.5em 0;
+  font-size: 1em;
+  font-weight: 500;
+  line-height: token.$line-height;
+}
+small {
+  font-size: token.$font-sm;
+}
+section {
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+}
+blockquote {
+  padding: math.div(token.$screen-padding, 2) token.$screen-padding;
+  background: token.$border-color;
+}
+[contenteditable] {
+  outline: 0px solid transparent;
+}
+iframe {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+button{
+  cursor: pointer;
+  color: token.$text-color;
+  &:disabled{
+    cursor: not-allowed;
+  }
+}

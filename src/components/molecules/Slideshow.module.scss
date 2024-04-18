@@ -1,0 +1,79 @@
+@use "@/assets/styles/partials/mixins";
+
+.showcase {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  .container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  &:global(.left) {
+    .container {
+      animation: infinity-scroll-left-50 20s infinite linear 0.5s both;
+      @include mixins.tablet {
+        animation: infinity-scroll-left-25 20s infinite linear 0.5s both;
+      }
+    }
+  }
+  &:global(.right) {
+    .container {
+      animation: infinity-scroll-right-50 20s infinite linear 0.5s both;
+      @include mixins.tablet {
+        animation: infinity-scroll-right-25 20s infinite linear 0.5s both;
+      }
+    }
+  }
+}
+
+.wrapper {
+  position: relative;
+  min-width: 50vw;
+  height: 100vh;
+  @include mixins.tablet {
+    min-width: 25vw;
+  }
+}
+
+.image {
+  object-fit: cover;
+  position: relative !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+@keyframes infinity-scroll-left-25 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100vw);
+  }
+}
+@keyframes infinity-scroll-right-25 {
+  from {
+    transform: translateX(-100vw);
+  }
+  to {
+    transform: translateX(0vw);
+  }
+}
+@keyframes infinity-scroll-left-50 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-200vw);
+  }
+}
+@keyframes infinity-scroll-right-50 {
+  from {
+    transform: translateX(-200vw);
+  }
+  to {
+    transform: translateX(0vw);
+  }
+}

@@ -1,0 +1,21 @@
+@use "@/assets/styles/partials/token";
+@use "@/assets/styles/partials/mixins";
+
+.company {
+  display: grid;
+  gap: token.$screen-padding;
+  width: 100%;
+  padding: token.$screen-padding;
+
+  @include mixins.laptop {
+    grid-template-columns: 1fr 1fr;
+    .logo {
+      grid-column: 1/3;
+    }
+  }
+}
+
+.logo {
+  margin: token.$screen-padding-mobile;
+  width: 240px;
+}

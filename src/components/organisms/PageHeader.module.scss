@@ -1,0 +1,17 @@
+@use "@/assets/styles/partials/token";
+
+.header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: token.$header-height;
+  padding: 0 token.$screen-padding;
+  z-index: 1000;
+}
+
+.logo {
+  width: 240px;
+  fill: token.$bg-color;
+}
