@@ -1,4 +1,6 @@
 @use "@/assets/styles/partials/token";
+@use "@/assets/styles/partials/mixins";
+
 .info {
   display: grid;
   grid-template-columns: minmax(130px, 20%) 1fr;
@@ -13,9 +15,12 @@
   th,
   td {
     display: block;
-    padding: token.$screen-padding-mobile;
+    padding: token.$screen-padding-mobile 0;
     text-align: start;
     line-height: 2em;
     border-top: token.$border;
+    @include mixins.tablet {
+      padding: token.$screen-padding-mobile;
+    }
   }
 }

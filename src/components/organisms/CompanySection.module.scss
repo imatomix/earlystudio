@@ -5,7 +5,11 @@
   display: grid;
   gap: token.$screen-padding;
   width: 100%;
-  padding: token.$screen-padding;
+  padding: token.$screen-padding-mobile;
+
+  @include mixins.tablet {
+    padding: token.$screen-padding;
+  }
 
   @include mixins.laptop {
     grid-template-columns: 1fr 1fr;
@@ -16,6 +20,10 @@
 }
 
 .logo {
-  margin: token.$screen-padding-mobile;
-  width: 240px;
+  margin: token.$screen-padding-mobile 0;
+  width: 200px;
+  @include mixins.tablet {
+    margin: token.$screen-padding-mobile;
+    width: 240px;
+  }
 }

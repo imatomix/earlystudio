@@ -1,4 +1,4 @@
-import Slideshow from "../molecules/Slideshow ";
+import Slideshow from "../molecules/Slideshow";
 import gallery from "@/util/gallery.json";
 import styles from "./WorksSection.module.scss";
 

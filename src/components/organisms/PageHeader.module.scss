@@ -1,17 +1,26 @@
 @use "@/assets/styles/partials/token";
+@use "@/assets/styles/partials/mixins";
 
 .header {
-  position: fixed;
+  position: sticky;
   top: 0;
   display: flex;
   align-items: center;
   width: 100%;
   height: token.$header-height;
-  padding: 0 token.$screen-padding;
+  padding: 0 token.$screen-padding-mobile;
+  margin-top: -(token.$header-height);
   z-index: 1000;
+
+  @include mixins.tablet {
+    padding: 0 token.$screen-padding;
+  }
 }
 
 .logo {
-  width: 240px;
+  width: 200px;
   fill: token.$bg-color;
+  @include mixins.tablet {
+    width: 240px;
+  }
 }
