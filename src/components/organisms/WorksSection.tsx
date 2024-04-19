@@ -7,7 +7,7 @@ export default function WorksSection() {
     <section className={styles.works}>
       <Slideshow srcs={gallery.mix} />
       <Slideshow srcs={gallery.mix} direction="right" />
-      <Slideshow srcs={gallery.mix} />
+      <Slideshow srcs={gallery.bg} mode={"slice"} />
     </section>
   );
 }
