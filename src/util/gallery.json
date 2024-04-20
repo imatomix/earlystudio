@@ -1,10 +1,10 @@
 {
-  "mix": ["/mix01.jpg", "/mix01.jpg", "/mix01.jpg", "/mix02.jpg"],
+  "mix": ["/mix01.jpg", "/mix02.jpg", "/mix01.jpg", "/mix04.jpg"],
   "motion": [
     "/motion01.jpg",
-    "/motion01.jpg",
-    "/motion01.jpg",
-    "/motion01.jpg"
+    "/motion02.jpg",
+    "/motion03.jpg",
+    "/motion04.jpg"
   ],
   "bg": ["/bg01.jpg", "/bg02.jpg", "/bg01.jpg", "/bg02.jpg"]
 }

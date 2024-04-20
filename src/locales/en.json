@@ -1,0 +1,30 @@
+{
+  "Company": {
+    "infomations": [
+      {
+        "item": "Office Name",
+        "value": "Early Reflections Co., ¥nEntertainment Tech Division"
+      },
+      {
+        "item": "Business",
+        "value": "AR・VR・MR等の3Dグラフィックスからリアルタイムモーションキャプチャー、映像グラフィックコンテンツの作成¥nリアル×バーチャルのハイブリッドライブ、キャラクターライブの作成¥n映像製作"
+      },
+      {
+        "item": "Address",
+        "value": "〒101-0051¥n東京都千代田区神田神保町1-22-2¥nVORT神保町Ⅳ 4F"
+      },
+      {
+        "item": "Capital",
+        "value": "10 million yen"
+      },
+      {
+        "item": "Established",
+        "value": "2007"
+      },
+      {
+        "item": "CEO",
+        "value": "Nobuyuki Tanaka"
+      }
+    ]
+  }
+}

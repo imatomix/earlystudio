@@ -13,7 +13,7 @@ export default function Slideshow({
   direction = "left",
 }: Props) {
   const generateShow = () => {
-    return [...srcs, ...srcs].map((src, index) => {
+    return srcs.map((src, index) => {
       return (
         <div className={styles.wrapper} key={index}>
           <Image

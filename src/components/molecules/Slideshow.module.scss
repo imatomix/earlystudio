@@ -6,24 +6,75 @@
   overflow: hidden;
   .container {
     position: relative;
+    height: 100vh;
     width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
   }
 
   &:global(.left) {
-    .container {
-      animation: infinity-scroll-left-50 20s infinite linear 0.5s both;
+    .wrapper {
+      position: absolute;
+      left: 0;
+      &:first-child {
+        animation: infinity-scroll-left-50 20s infinite linear -15s both;
+      }
+      &:nth-child(2) {
+        animation: infinity-scroll-left-50 20s infinite linear -10s both;
+      }
+      &:nth-child(3) {
+        animation: infinity-scroll-left-50 20s infinite linear -5s both;
+      }
+      &:nth-child(4) {
+        animation: infinity-scroll-left-50 20s infinite linear 0s both;
+      }
       @include mixins.tablet {
-        animation: infinity-scroll-left-25 20s infinite linear 0.5s both;
+        &:first-child {
+          animation: infinity-scroll-left-25 20s infinite linear -15s both;
+        }
+        &:nth-child(2) {
+          animation: infinity-scroll-left-25 20s infinite linear -10s both;
+        }
+        &:nth-child(3) {
+          animation: infinity-scroll-left-25 20s infinite linear -5s both;
+        }
+        &:nth-child(4) {
+          animation: infinity-scroll-left-25 20s infinite linear 0s both;
+        }
       }
     }
   }
   &:global(.right) {
-    .container {
-      animation: infinity-scroll-right-50 20s infinite linear 0.5s both;
+    position: relative;
+    height: 100vh;
+    .wrapper {
+      position: absolute;
+      left: 0;
+      width: 25vw;
+      &:first-child {
+        animation: infinity-scroll-right-50 20s infinite linear -15s both;
+      }
+      &:nth-child(2) {
+        animation: infinity-scroll-right-50 20s infinite linear -10s both;
+      }
+      &:nth-child(3) {
+        animation: infinity-scroll-right-50 20s infinite linear -5s both;
+      }
+      &:nth-child(4) {
+        animation: infinity-scroll-right-50 20s infinite linear 0s both;
+      }
+
       @include mixins.tablet {
-        animation: infinity-scroll-right-25 20s infinite linear 0.5s both;
+        &:first-child {
+          animation: infinity-scroll-right-25 20s infinite linear -15s both;
+        }
+        &:nth-child(2) {
+          animation: infinity-scroll-right-25 20s infinite linear -10s both;
+        }
+        &:nth-child(3) {
+          animation: infinity-scroll-right-25 20s infinite linear -5s both;
+        }
+        &:nth-child(4) {
+          animation: infinity-scroll-right-25 20s infinite linear 0s both;
+        }
       }
     }
   }
@@ -35,22 +86,19 @@
           object-position: 0 50%;
         }
       }
-      &:nth-child(2),
-      &:nth-child(6) {
+      &:nth-child(2) {
         .image {
-          object-position: 25% 50%;
+          object-position: 34% 50%;
         }
       }
-      &:nth-child(3),
-      &:nth-child(7) {
+      &:nth-child(3) {
         .image {
-          object-position: 50% 50%;
+          object-position: 67% 50%;
         }
       }
-      &:nth-child(4),
-      &:nth-child(8) {
+      &:nth-child(4) {
         .image {
-          object-position: 75% 50%;
+          object-position: 100% 50%;
         }
       }
     }
@@ -58,11 +106,10 @@
 }
 
 .wrapper {
-  position: relative;
-  min-width: 50vw;
+  width: 50vw !important;
   height: 100vh;
   @include mixins.tablet {
-    min-width: 25vw;
+    width: 34vw !important;
   }
 }
 
@@ -75,33 +122,33 @@
 
 @keyframes infinity-scroll-left-25 {
   from {
-    transform: translateX(0);
+    transform: translateX(100vw);
   }
   to {
-    transform: translateX(-100vw);
+    transform: translateX(-34vw);
   }
 }
 @keyframes infinity-scroll-right-25 {
   from {
-    transform: translateX(-100vw);
+    transform: translateX(-34vw);
   }
   to {
-    transform: translateX(0vw);
+    transform: translateX(100vw);
   }
 }
 @keyframes infinity-scroll-left-50 {
   from {
-    transform: translateX(0);
+    transform: translateX(150vw);
   }
   to {
-    transform: translateX(-200vw);
+    transform: translateX(-50vw);
   }
 }
 @keyframes infinity-scroll-right-50 {
   from {
-    transform: translateX(-200vw);
+    transform: translateX(-50vw);
   }
   to {
-    transform: translateX(0vw);
+    transform: translateX(150vw);
   }
 }
