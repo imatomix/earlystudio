@@ -1,6 +1,6 @@
-@use 'sass:math';
-@use './token';
-@use './typo';
+@use "sass:math";
+@use "./token";
+@use "./typo";
 
 html {
   height: 100%;
@@ -9,6 +9,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -webkit-overflow-scrolling: touch;
   font-size: 100%;
+  scroll-behavior: smooth;
 }
 body {
   position: relative;
@@ -18,7 +19,7 @@ body {
   font-family: typo.$font;
   font-size: 1rem;
   font-weight: token.$font-regular;
-  font-feature-settings: 'palt';
+  font-feature-settings: "palt";
   letter-spacing: 0.05em;
   line-height: token.$line-height;
   color: token.$text-color;
@@ -88,10 +89,10 @@ iframe {
   height: auto;
   aspect-ratio: 16/9;
 }
-button{
+button {
   cursor: pointer;
   color: token.$text-color;
-  &:disabled{
+  &:disabled {
     cursor: not-allowed;
   }
 }

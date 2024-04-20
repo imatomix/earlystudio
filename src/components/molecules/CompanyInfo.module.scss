@@ -3,9 +3,13 @@
 
 .info {
   display: grid;
-  grid-template-columns: minmax(130px, 20%) 1fr;
+  grid-template-columns: 1fr;
   width: 100%;
   border-bottom: token.$border;
+  @include mixins.landscape {
+    grid-template-columns: minmax(130px, 20%) 1fr;
+  }
+
   thead,
   tbody,
   tfoot,
@@ -18,9 +22,15 @@
     padding: token.$screen-padding-mobile 0;
     text-align: start;
     line-height: 2em;
-    border-top: token.$border;
-    @include mixins.tablet {
-      padding: token.$screen-padding-mobile;
+    @include mixins.landscape {
+      border-top: token.$border;
     }
+    @include mixins.tablet {
+      padding: token.$screen-padding-mobile !important;
+    }
+  }
+  th {
+    border-top: token.$border;
+    padding: token.$screen-padding-mobile 0 0;
   }
 }
