@@ -9,7 +9,7 @@ export default function CompanyInfo() {
           <td>
             株式会社アーリーリフレクション
             <br />
-            エンターテイメント事業部
+            エンターテインメントテック事業部
           </td>
         </tr>
         <tr>
