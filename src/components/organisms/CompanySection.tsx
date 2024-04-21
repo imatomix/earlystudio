@@ -1,7 +1,7 @@
-import CompanyInfo from "../molecules/CompanyInfo";
-import Map from "@/components/atoms/Map";
-import Logo from "@/assets/logos/logo.svg";
-import styles from "./CompanySection.module.scss";
+import CompanyInfo from '../molecules/CompanyInfo'
+import Map from '@/components/atoms/Map'
+import Logo from '@/assets/logos/logo.svg'
+import styles from './CompanySection.module.scss'
 
 export default function CompanySection() {
   return (
@@ -12,5 +12,5 @@ export default function CompanySection() {
       <CompanyInfo />
       <Map />
     </section>
-  );
+  )
 }

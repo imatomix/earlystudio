@@ -1,4 +1,4 @@
-import styles from "./Map.module.scss";
+import styles from './Map.module.scss'
 
 export default function Map() {
   return (
@@ -9,5 +9,5 @@ export default function Map() {
         referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
     </div>
-  );
+  )
 }

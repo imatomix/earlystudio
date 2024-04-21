@@ -1,7 +1,7 @@
-import CompanySection from "@/components/organisms/CompanySection";
-import WorksSection from "@/components/organisms/WorksSection";
-import styles from "./page.module.scss";
-import PageHeader from "@/components/organisms/PageHeader";
+import CompanySection from '@/components/organisms/CompanySection'
+import WorksSection from '@/components/organisms/WorksSection'
+import styles from './page.module.scss'
+import PageHeader from '@/components/organisms/PageHeader'
 
 export default function Home() {
   return (
@@ -12,5 +12,5 @@ export default function Home() {
       </div>
       <CompanySection />
     </main>
-  );
+  )
 }

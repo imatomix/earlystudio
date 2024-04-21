@@ -1,16 +1,16 @@
-import Image from "next/image";
-import styles from "./Slideshow.module.scss";
+import Image from 'next/image'
+import styles from './Slideshow.module.scss'
 
 type Props = {
-  srcs: string[];
-  mode?: "default" | "slice";
-  direction?: "right" | "left";
-};
+  srcs: string[]
+  mode?: 'default' | 'slice'
+  direction?: 'right' | 'left'
+}
 
 export default function Slideshow({
   srcs,
-  mode = "default",
-  direction = "left",
+  mode = 'default',
+  direction = 'left',
 }: Props) {
   const generateShow = () => {
     return srcs.map((src, index) => {
@@ -25,13 +25,13 @@ export default function Slideshow({
             sizes="100vw 100vh"
           />
         </div>
-      );
-    });
-  };
+      )
+    })
+  }
 
   return (
-    <div className={[styles.showcase, mode, direction].join(" ")}>
+    <div className={[styles.showcase, mode, direction].join(' ')}>
       <div className={styles.container}>{generateShow()}</div>
     </div>
-  );
+  )
 }

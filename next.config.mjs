@@ -1,19 +1,19 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
-  output: "export",
-  images: { unoptimized: true },
+  output: 'export',
+  images: { unoptimized: true, formats: ['image/webp'] },
   webpack: (config) => {
     config.module.rules.push({
       test: /\.svg$/,
       use: [
         {
-          loader: "@svgr/webpack",
+          loader: '@svgr/webpack',
         },
       ],
-    });
-    return config;
+    })
+    return config
   },
-};
+}
 
-export default nextConfig;
+export default nextConfig

@@ -1,6 +1,6 @@
-"use client";
-import Logo from "@/assets/logos/logo.svg";
-import styles from "./PageHeader.module.scss";
+'use client'
+import Logo from '@/assets/logos/logo.svg'
+import styles from './PageHeader.module.scss'
 
 export default function PageHeader() {
   return (
@@ -9,5 +9,5 @@ export default function PageHeader() {
         <Logo className={styles.logo} />
       </a>
     </header>
-  );
+  )
 }

@@ -1,4 +1,4 @@
-import styles from "./CompanyInfo.module.scss";
+import styles from './CompanyInfo.module.scss'
 
 export default function CompanyInfo() {
   return (
@@ -46,5 +46,5 @@ export default function CompanyInfo() {
         </tr>
       </tbody>
     </table>
-  );
+  )
 }
