@@ -4,4 +4,6 @@
   padding: token.$screen-padding * 2 token.$screen-padding;
   text-align: center;
   font-size: token.$font-xs;
+  width: 100%;
+  z-index: 5;
 }

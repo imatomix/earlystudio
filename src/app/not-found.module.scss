@@ -1,0 +1,40 @@
+@use '@/assets/styles/partials/token';
+
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: token.$bg-color;
+  background-color: token.$text-color;
+  text-align: center;
+  min-height: 100vh;
+  a {
+    color: token.$bg-color;
+  }
+}
+
+.container {
+  width: 100%;
+  flex: 1;
+  display: grid;
+  place-content: center;
+  padding: token.$screen-padding-mobile;
+
+  :global(.default) {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  .message {
+    z-index: 1;
+    text-transform: uppercase;
+  }
+}
+
+.code {
+  font-size: token.$font-xxxl * 1.8;
+  line-height: 1em;
+  padding: 0;
+}

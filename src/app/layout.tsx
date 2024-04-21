@@ -19,10 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body>
-        {children}
-        <PageFooter />
-      </body>
+      <body>{children}</body>
     </html>
   )
 }

@@ -1,6 +1,6 @@
-@use "sass:math";
-@use "./token";
-@use "./typo";
+@use 'sass:math';
+@use './token';
+@use './typo';
 
 html {
   height: 100%;
@@ -19,7 +19,7 @@ body {
   font-family: typo.$font;
   font-size: 1rem;
   font-weight: token.$font-regular;
-  font-feature-settings: "palt";
+  font-feature-settings: 'palt';
   letter-spacing: 0.05em;
   line-height: token.$line-height;
   color: token.$text-color;
