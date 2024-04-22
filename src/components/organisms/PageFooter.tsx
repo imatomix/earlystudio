@@ -4,7 +4,7 @@ import styles from './PageFooter.module.scss'
 export default function PageFooter() {
   return (
     <footer className={styles.footer}>
-      &copy;2007 <a href="https://earlyref.com">Early Reflections Co.,</a>
+      &copy;2024 <a href="https://earlyref.com">Early Reflections Co., Ltd.</a>
     </footer>
   )
 }
