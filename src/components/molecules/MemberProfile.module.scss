@@ -4,7 +4,7 @@
   display: grid;
   gap: 1em;
   align-items: start;
-  grid-template-rows: max-content max-content 1fr;
+  grid-template-rows: max-content max-content 1fr max-content;
 
   h3 {
     font-size: token.$font-lg;
@@ -28,8 +28,8 @@
       color: token.$bg-color;
       background-color: token.$text-color;
     }
-    padding: 0 1.5em;
-    line-height: 1.7em;
-    clip-path: polygon(15% 0, 100% 0, 85% 100%, 0 100%);
+    padding: 0 1.25em;
+    line-height: 1.75em;
+    clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
   }
 }
