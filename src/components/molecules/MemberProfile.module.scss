@@ -1,0 +1,35 @@
+@use '@/assets/styles/partials/token';
+
+.profile {
+  display: grid;
+  gap: 1em;
+  align-items: start;
+  grid-template-rows: max-content max-content 1fr;
+
+  h3 {
+    font-size: token.$font-lg;
+    font-weight: token.$font-regular;
+    text-transform: uppercase;
+  }
+  small {
+    font-size: token.$font-xs;
+    font-weight: token.$font-regular;
+  }
+  p {
+    font-size: token.$font-sm;
+    line-height: 2em;
+    padding-bottom: 0;
+  }
+  a {
+    display: inline-block;
+    font-size: token.$font-xs;
+    background-color: token.$bg-gray;
+    &:hover {
+      color: token.$bg-color;
+      background-color: token.$text-color;
+    }
+    padding: 0 1.5em;
+    line-height: 1.7em;
+    clip-path: polygon(15% 0, 100% 0, 85% 100%, 0 100%);
+  }
+}

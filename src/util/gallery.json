@@ -1,10 +1,16 @@
 {
-  "mix": ["/mix01.jpg", "/mix02.jpg", "/mix01.jpg", "/mix04.jpg"],
+  "mix": ["/mix01.jpg", "/mix02.jpg?33", "/mix01.jpg", "/mix04.jpg"],
   "motion": [
     "/motion01.jpg",
     "/motion02.jpg",
     "/motion03.jpg",
     "/motion04.jpg"
+  ],
+  "mh": [
+    "/metahuman01.png",
+    "/metahuman15.png",
+    "/metahuman31.png",
+    "/metahuman45.png"
   ],
   "bg": ["/bg01.jpg", "/bg02.jpg", "/bg01.jpg", "/bg02.jpg"]
 }

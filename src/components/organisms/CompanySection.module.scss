@@ -2,20 +2,10 @@
 @use '@/assets/styles/partials/mixins';
 
 .company {
-  display: grid;
-  gap: token.$screen-padding;
   width: 100%;
   padding: token.$screen-padding-mobile;
-
   @include mixins.tablet {
-    padding: token.$screen-padding;
-  }
-
-  @include mixins.laptop {
-    grid-template-columns: 1fr 1fr;
-    .logo {
-      grid-column: 1/3;
-    }
+    padding: token.$screen-padding * 2 token.$screen-padding;
   }
 }
 
@@ -25,5 +15,25 @@
   @include mixins.tablet {
     margin: token.$screen-padding-mobile;
     width: 240px;
+  }
+}
+
+.info {
+  display: grid;
+  gap: token.$screen-padding;
+  @include mixins.laptop {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.member {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: token.$screen-padding * 2 5% token.$screen-padding * 3;
+  gap: max(token.$screen-padding, 10%);
+  max-width: token.$max-width;
+  margin: auto;
+  @include mixins.tablet {
+    grid-template-columns: 1fr 1fr;
   }
 }
