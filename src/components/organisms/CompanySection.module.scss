@@ -31,9 +31,9 @@
   grid-template-columns: 1fr;
   padding: token.$screen-padding * 2 5% token.$screen-padding * 3;
   gap: max(token.$screen-padding, 10%);
-  max-width: token.$max-width / 2;
+  max-width: token.$max-width;
   margin: auto;
   @include mixins.tablet {
-    //    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
