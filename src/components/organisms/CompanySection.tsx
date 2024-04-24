@@ -7,6 +7,7 @@ import styles from './CompanySection.module.scss'
 
 export default function CompanySection() {
   const profiles = members.map((member, index) => {
+    // if (index > 0) return
     return <MemberProfile member={member} key={index} />
   })
 

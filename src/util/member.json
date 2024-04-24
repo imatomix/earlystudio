@@ -1,16 +1,5 @@
 [
   {
-    "name": "Nobuyuki Tanaka",
-    "job": "Founder / CEO",
-    "description": "Early Refletions代表。米国セキュリティソフトウェア日本法人の代表をはじめ、IT、通信、建設コンサルタント、製造小売等、多業種のマネジメントを経験。2018年度より科学技術シーズのスタートアップ投資と経営参画を本格化。野心的スタートアップの「最初の反響」となる活動を行っている。",
-    "links": [
-      {
-        "label": "X",
-        "href": "https://twitter.com/tn0bu"
-      }
-    ]
-  },
-  {
     "name": "Keita Imatomi",
     "job": "Creative Director / Technical Artist",
     "description": "ゲーム業界でカットシーンディレクター、アートディレクター、テクニカルアーティストを経て、スタートアップ業界でブランディングやプロダクト開発に従事。戦略プランニングとデジタル領域の企画開発から開発環境の構築、クリエイティブディレクション、デザイン、コーディングまでを一貫して行う。",
@@ -18,6 +7,17 @@
       {
         "label": "Works",
         "href": "https://imatomix.com/imatomix"
+      }
+    ]
+  },
+  {
+    "name": "Nobuyuki Tanaka",
+    "job": "Founder / CEO",
+    "description": "Early Refletions代表。米国セキュリティソフトウェア日本法人の代表をはじめ、IT、通信、建設コンサルタント、製造小売等、多業種のマネジメントを経験。2018年度より科学技術シーズのスタートアップ投資と経営参画を本格化。野心的スタートアップの「最初の反響」となる活動を行っている。",
+    "links": [
+      {
+        "label": "X",
+        "href": "https://twitter.com/tn0bu"
       }
     ]
   }
