@@ -1,0 +1,11 @@
+{
+	"controller": {
+		"version": 1,
+		"id": "controller",
+		"name": "1",
+		"kind": "Puppeteer",
+		"mood": null,
+		"postPlaybackMood": null,
+		"duration": 3.333333333
+	}
+}

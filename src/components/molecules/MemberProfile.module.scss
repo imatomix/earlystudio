@@ -4,7 +4,7 @@
   display: grid;
   gap: 1em;
   align-items: start;
-  grid-template-rows: max-content max-content 1fr max-content;
+  grid-template-rows: max-content max-content max-content max-content;
 
   h3 {
     font-size: token.$font-lg;
