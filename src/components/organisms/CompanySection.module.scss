@@ -29,11 +29,14 @@
 .member {
   display: grid;
   grid-template-columns: 1fr;
-  padding: token.$screen-padding * 2 5%;
+  padding: token.$screen-padding 5% token.$screen-padding * 2;
   gap: max(token.$screen-padding, 10%);
   max-width: token.$max-width;
   margin: auto;
+  align-items: center;
+
   @include mixins.tablet {
+    padding: token.$screen-padding * 2 5%;
     grid-template-columns: 1fr 1fr;
   }
 

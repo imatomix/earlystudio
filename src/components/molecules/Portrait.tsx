@@ -1,52 +1,64 @@
 'use client'
 import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
-import { OrbitControls, Environment } from '@react-three/drei'
+import {
+  OrbitControls,
+  Environment,
+  ContactShadows,
+  SoftShadows,
+} from '@react-three/drei'
 import GLTF from '@/components/atoms/Gltf'
 
 export default function Portrait() {
   return (
     <Canvas
+      shadows
       camera={{
-        fov: 32,
+        fov: 36,
         near: 10,
-        far: 1000,
-        position: [0, 100, 300],
+        far: 40,
+        position: [0, 10, 30],
       }}
     >
+      <SoftShadows size={25} focus={2} samples={15} />
+      <ContactShadows
+        opacity={0.5}
+        blur={2}
+        position={[0, -4.99, 0]}
+        far={20}
+        near={1}
+        scale={50}
+        frames={30}
+        color={0x0099cc}
+        resolution={128}
+      />
       <Suspense fallback={null}>
-        <ambientLight intensity={1} />
-        <spotLight
-          color={0xff0000}
-          position={[1000, 1000, -1000]}
-          angle={0.1}
-          penumbra={1}
-          decay={0}
-          intensity={2}
-          castShadow
-          shadow-mapSize={2048}
-          shadow-bias={-0.0001}
-        />
-        <pointLight
-          position={[0, 120, 50]}
-          decay={0}
-          intensity={5}
-          color={0x00aaff}
-          castShadow
-        />
-
-        <GLTF castShadow receiveShadow position={[0, -70, -30]} />
-        <OrbitControls
-          minDistance={10}
-          maxDistance={1000}
-          rotateSpeed={0.4}
-          zoomSpeed={0.5}
-          autoRotate
-          enableZoom={false}
-          enablePan={false}
-        />
+        <GLTF position={[0, -5, -3]} scale={[0.1, 0.1, 0.1]} />
         <Environment preset="sunset" />
       </Suspense>
+      <ambientLight intensity={0.5} />
+      <directionalLight
+        color={0xff9900}
+        position={[-0, 15, -2]}
+        intensity={5}
+        castShadow
+      />
+      <pointLight
+        position={[0, 6, 2]}
+        decay={0}
+        intensity={3}
+        color={0x00aaff}
+      />
+      <OrbitControls
+        minDistance={10}
+        maxDistance={1000}
+        rotateSpeed={0.4}
+        zoomSpeed={0.5}
+        autoRotate
+        autoRotateSpeed={-3}
+        enableZoom={false}
+        enablePan={false}
+      />
     </Canvas>
   )
 }
