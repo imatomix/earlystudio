@@ -6,7 +6,6 @@ import {
   Environment,
   ContactShadows,
   SoftShadows,
-  Stats,
 } from '@react-three/drei'
 import GLTF from '@/components/atoms/Gltf'
 
@@ -44,23 +43,17 @@ export default function Portrait() {
         intensity={5}
         castShadow
       />
-      <pointLight
-        position={[0, 6, 2]}
-        intensity={3}
-        decay={0}
-        color={0x00aaff}
-      />
+      <pointLight position={[0, 6, 2]} intensity={3} color={0x00aaff} />
       <OrbitControls
         minDistance={10}
         maxDistance={1000}
         rotateSpeed={0.4}
         zoomSpeed={0.5}
         autoRotate
-        autoRotateSpeed={-3}
+        autoRotateSpeed={-Math.PI}
         enableZoom={false}
         enablePan={false}
       />
-      <Stats />
     </Canvas>
   )
 }
