@@ -28,7 +28,7 @@ export default function Portrait() {
         far={20}
         near={1}
         scale={50}
-        frames={30}
+        frames={50}
         color={0x0099cc}
         resolution={128}
       />
@@ -43,12 +43,7 @@ export default function Portrait() {
         intensity={5}
         castShadow
       />
-      <pointLight
-        position={[0, 6, 2]}
-        decay={0}
-        intensity={3}
-        color={0x00aaff}
-      />
+      <pointLight position={[0, 6, 2]} intensity={3} color={0x00aaff} />
       <OrbitControls
         minDistance={10}
         maxDistance={1000}
