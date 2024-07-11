@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://earlystudio.com'),
   title: 'Early Studio',
   description:
-    'Early Studioは、データサイエンス、データエンジニアリング、３D解析やデータ構築技術に強みを持つアーリーリフレクションのエンターテイメントプロダクションチームです。豊富な実績の持つクリエイティブチームにより、３Dキャラクター、VR、AR等のプロダクションを実現します。',
+    'Early Studioは、データサイエンス、データエンジニアリング、3D解析やデータ構築技術に強みを持つアーリーリフレクションのエンターテイメントプロダクションチームです。豊富な実績の持つクリエイティブチームにより、３Dキャラクター、VR、AR等のプロダクションを実現します。',
   openGraph: {
     images: '/ogp.jpg',
   },
